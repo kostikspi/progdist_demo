@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <div class="header">
+                <h1>Прогрессивная дистилляция для ускорения генерации речи в диффузионных моделях</h1>
+            </div>
+            <p><strong>Описание:</strong> Данное исследование рассматривает метод прогрессивной дистилляции как способ преодоления вычислительных трудностей при генерации речи. Данный подход направлен на ускорение процесса генерации, сохраняя при этом высокое качество образцов. Это может открыть новые возможности для синтеза речи в реальном времени и масштабируемой генерации более длинных высказываний.</p>
+                <p><strong>Данные:</strong> LJSpeech</p>
+            <table class="first-table">
+                <thead>
+                    <tr>
+                        <th>DiffWave</th>
+                        <th>DiffWave 1 итерация</th>
+                        <th>DiffWave 2 итерации</th>
+                        <th>DiffWave 3 итерации</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <audio controls>
+                                <source src="audio/DiffWave/LJ001-0040.wav" type="audio/wav">
+                                Ваш браузер не поддерживает аудио элемент
+                              </audio>
+                        </td>
+                        <td>
+                            <audio controls>
+                                <source src="audio/DiffWave_1/LJ001-0040.wav" type="audio/wav">
+                                Ваш браузер не поддерживает аудио элемент
+                              </audio>
+                        </td>
+                        <td>
+                            <audio controls>
+                                <source src="audio/DiffWave_2/LJ001-0027.wav" type="audio/wav">
+                                Ваш браузер не поддерживает аудио элемент
+                              </audio>
+                        </td>
+                        <td>
+                            <audio controls>
+                                <source src="audio/DiffWave_3/LJ001-0027.wav" type="audio/wav">
+                                Ваш браузер не поддерживает аудио элемент
+                              </audio>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <audio controls>
+                                <source src="audio/DiffWave/LJ002-0278.wav" type="audio/wav">
+                                Ваш браузер не поддерживает аудио элемент
+                              </audio>
+                        </td>
+                        <td>
+                            <audio controls>
+                                <source src="audio/DiffWave_1/LJ002-0278.wav" type="audio/wav">
+                                Ваш браузер не поддерживает аудио элемент
+                              </audio>
+                        </td>
+                        <td>
+                            <audio controls>
+                                <source src="audio/DiffWave_2/LJ001-0090.wav" type="audio/wav">
+                                Ваш браузер не поддерживает аудио элемент
+                              </audio>
+                        </td>
+                        <td>
+                            <audio controls>
+                                <source src="audio/DiffWave_3/LJ001-0090.wav" type="audio/wav">
+                                Ваш браузер не поддерживает аудио элемент
+                              </audio>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <audio controls>
+                                <source src="audio/DiffWave/LJ003-0007.wav" type="audio/wav">
+                                Ваш браузер не поддерживает аудио элемент
+                              </audio>
+                        </td>
+                        <td>
+                            <audio controls>
+                                <source src="audio/DiffWave_1/LJ003-0007.wav" type="audio/wav">
+                                Ваш браузер не поддерживает аудио элемент
+                              </audio>
+                        </td>
+                        <td>
+                            <audio controls>
+                                <source src="audio/DiffWave_2/LJ001-0176.wav" type="audio/wav">
+                                Ваш браузер не поддерживает аудио элемент
+                              </audio>
+                        </td>
+                        <td>
+                            <audio controls>
+                                <source src="audio/DiffWave_3/LJ001-0176.wav" type="audio/wav">
+                                Ваш браузер не поддерживает аудио элемент
+                              </audio>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <audio controls>
+                                <source src="audio/DiffWave/LJ003-0101.wav" type="audio/wav">
+                                Ваш браузер не поддерживает аудио элемент
+                              </audio>
+                        </td>
+                        <td>
+                            <audio controls>
+                                <source src="audio/DiffWave_1/LJ003-0101.wav" type="audio/wav">
+                                Ваш браузер не поддерживает аудио элемент
+                              </audio>
+                        </td>
+                        <td>
+                            <audio controls>
+                                <source src="audio/DiffWave_2/LJ002-0023.wav" type="audio/wav">
+                                Ваш браузер не поддерживает аудио элемент
+                              </audio>
+                        </td>
+                        <td>
+                            <audio controls>
+                                <source src="audio/DiffWave_3/LJ002-0023.wav" type="audio/wav">
+                                Ваш браузер не поддерживает аудио элемент
+                              </audio>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <audio controls>
+                                <source src="audio/DiffWave/LJ003-0211.wav" type="audio/wav">
+                                Ваш браузер не поддерживает аудио элемент
+                              </audio>
+                        </td>
+                        <td>
+                            <audio controls>
+                                <source src="audio/DiffWave_1/LJ003-0211.wav" type="audio/wav">
+                                Ваш браузер не поддерживает аудио элемент
+                              </audio>
+                        </td>
+                        <td>
+                            <audio controls>
+                                <source src="audio/DiffWave_2/LJ002-0066.wav" type="audio/wav">
+                                Ваш браузер не поддерживает аудио элемент
+                              </audio>
+                        </td>
+                        <td>
+                            <audio controls>
+                                <source src="audio/DiffWave_3/LJ002-0066.wav" type="audio/wav">
+                                Ваш браузер не поддерживает аудио элемент
+                              </audio>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table>
+                <thead>
+                    <tr>
+                       <th>WaveGrad</th>
+                       <th>WaveGrad 1 итерация</th>
+                       <th>WaveGrad 2 итерации</th>
+                       <th>Ground Truth</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <audio controls>
+                                <source src="audio/WaveGrad/LJ001-0040.wav" type="audio/wav">
+                                Ваш браузер не поддерживает аудио элемент
+                              </audio>
+                        </td>
+                        <td>
+                            <audio controls>
+                                <source src="audio/WaveGrad_1/LJ001-0027.wav" type="audio/wav">
+                                Ваш браузер не поддерживает аудио элемент
+                              </audio>
+                        </td>
+                        <td>
+                            <audio controls>
+                                <source src="audio/WaveGrad_2/LJ001-0040.wav" type="audio/wav">
+                                Ваш браузер не поддерживает аудио элемент
+                              </audio>
+                        </td>
+                        <td>
+                            <audio controls>
+                                <source src="audio/GroundTruth/LJ001-0040.wav" type="audio/wav">
+                                Ваш браузер не поддерживает аудио элемент
+                              </audio>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <audio controls>
+                                <source src="audio/WaveGrad/LJ002-0278.wav" type="audio/wav">
+                                Ваш браузер не поддерживает аудио элемент
+                              </audio>
+                        </td>
+                        <td>
+                            <audio controls>
+                                <source src="audio/WaveGrad_1/LJ001-0090.wav" type="audio/wav">
+                                Ваш браузер не поддерживает аудио элемент
+                              </audio>
+                        </td>
+                        <td>
+                            <audio controls>
+                                <source src="audio/WaveGrad_2/LJ002-0278.wav" type="audio/wav">
+                                Ваш браузер не поддерживает аудио элемент
+                              </audio>
+                        </td>
+                        <td>
+                            <audio controls>
+                                <source src="audio/GroundTruth/LJ002-0278.wav" type="audio/wav">
+                                Ваш браузер не поддерживает аудио элемент
+                              </audio>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <audio controls>
+                                <source src="audio/WaveGrad/LJ003-0007.wav" type="audio/wav">
+                                Ваш браузер не поддерживает аудио элемент
+                              </audio>
+                        </td>
+                        <td>
+                            <audio controls>
+                                <source src="audio/WaveGrad_1/LJ001-0176.wav" type="audio/wav">
+                                Ваш браузер не поддерживает аудио элемент
+                              </audio>
+                        </td>
+                        <td>
+                            <audio controls>
+                                <source src="audio/WaveGrad_2/LJ003-0007.wav" type="audio/wav">
+                                Ваш браузер не поддерживает аудио элемент
+                              </audio>
+                        </td>
+                        <td>
+                            <audio controls>
+                                <source src="audio/GroundTruth/LJ003-0007.wav" type="audio/wav">
+                                Ваш браузер не поддерживает аудио элемент
+                              </audio>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <audio controls>
+                                <source src="audio/WaveGrad/LJ003-0101.wav" type="audio/wav">
+                                Ваш браузер не поддерживает аудио элемент
+                              </audio>
+                        </td>
+                        <td>
+                            <audio controls>
+                                <source src="audio/WaveGrad_1/LJ002-0023.wav" type="audio/wav">
+                                Ваш браузер не поддерживает аудио элемент
+                              </audio>
+                        </td>
+                        <td>
+                            <audio controls>
+                                <source src="audio/WaveGrad_2/LJ003-0101.wav" type="audio/wav">
+                                Ваш браузер не поддерживает аудио элемент
+                              </audio>
+                        </td>
+                        <td>
+                            <audio controls>
+                                <source src="audio/GroundTruth/LJ003-0101.wav" type="audio/wav">
+                                Ваш браузер не поддерживает аудио элемент
+                              </audio>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <audio controls>
+                                <source src="audio/WaveGrad/LJ003-0211.wav" type="audio/wav">
+                                Ваш браузер не поддерживает аудио элемент
+                              </audio>
+                        </td>
+                        <td>
+                            <audio controls>
+                                <source src="audio/WaveGrad_1/LJ002-0066.wav" type="audio/wav">
+                                Ваш браузер не поддерживает аудио элемент
+                              </audio>
+                        </td>
+                        <td>
+                            <audio controls>
+                                <source src="audio/WaveGrad_2/LJ003-0211.wav" type="audio/wav">
+                                Ваш браузер не поддерживает аудио элемент
+                              </audio>
+                        </td>
+                        <td>
+                            <audio controls>
+                                <source src="audio/GroundTruth/LJ003-0211.wav" type="audio/wav">
+                                Ваш браузер не поддерживает аудио элемент
+                              </audio>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h2>Пример спектрограммы</h2>
+            <div class="image-container">
+                <img src="images/tg_image_3767590253.jpeg" alt="Пример спектрограммы">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
